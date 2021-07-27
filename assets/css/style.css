@@ -26,6 +26,7 @@ header{
     background-attachment: cover;
     background-size: 70%;
     font-family: Lora;
+    position:-webkit-sticky;
     position:sticky;
 }
 h1{
@@ -45,6 +46,7 @@ nav{
     background-color:#2e2e2e ;
     height:9vh;
     width:99vw;
+    position:-webkit-sticky;
     position:sticky;
     top:0;
     
@@ -177,6 +179,34 @@ input[type="submit"]{
 }
 input:focus{
     outline:none; /*um die outline border beim focus zu entfernen */
+}
+
+form input::-webkit-input-placeholder{
+    font-family:Work Sans;
+    padding-left:2%;
+    font-size:2vh;
+    
+}
+
+form input::-moz-placeholder{
+    font-family:Work Sans;
+    padding-left:2%;
+    font-size:2vh;
+    
+}
+
+form input:-ms-input-placeholder{
+    font-family:Work Sans;
+    padding-left:2%;
+    font-size:2vh;
+    
+}
+
+form input::-ms-input-placeholder{
+    font-family:Work Sans;
+    padding-left:2%;
+    font-size:2vh;
+    
 }
 
 form input::placeholder{
@@ -319,6 +349,30 @@ footer{
     }
     input:focus{
         outline:none; /*um die outline border beim focus zu entfernen */
+    }
+    form input::-webkit-input-placeholder{
+        font-family:Work Sans;
+        text-align: center;
+        font-size:3vh;
+        
+    }
+    form input::-moz-placeholder{
+        font-family:Work Sans;
+        text-align: center;
+        font-size:3vh;
+        
+    }
+    form input:-ms-input-placeholder{
+        font-family:Work Sans;
+        text-align: center;
+        font-size:3vh;
+        
+    }
+    form input::-ms-input-placeholder{
+        font-family:Work Sans;
+        text-align: center;
+        font-size:3vh;
+        
     }
     form input::placeholder{
         font-family:Work Sans;
