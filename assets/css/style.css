@@ -7,7 +7,8 @@
 }
 /* Farbe: #2e2e2e / #fff / #000 / #1d2c2f  */
 body{
-    font-family:Work Sans, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:Work Sans, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration:none;
@@ -132,7 +133,7 @@ figcaption{
     background-color: #2e2e2e ;
     display:flex;
     color:white;
-    padding-top:7%; /*damit die nav bar mit dem grauen background zusammen schließt*/
+    padding-top:10%; /*damit die nav bar mit dem grauen background zusammen schließt*/
 }
 #contact h2{
     font-family: Lora;
@@ -145,9 +146,10 @@ figcaption{
     padding-top:3%;
     line-height:4vh;
     word-spacing: 0.7vh;
+    width:70%;
 }
 #contact article{
-    padding:10% 7%;
+    padding:10% 5%;
 }
 form{
     flex-basis: 50%;
@@ -175,8 +177,12 @@ input[type="submit"]{
 input:focus{
     outline:none; /*um die outline border beim focus zu entfernen */
 }
-form::placeholder{
+
+form input::placeholder{
     font-family:Work Sans;
+    padding-left:2%;
+    font-size:2vh;
+    
 }
 /*footer*/
 footer{
@@ -204,4 +210,139 @@ footer{
 }
 #intern li{
     padding-left:5%;
+}
+#intern li a{
+    font-family: Lora;
+}
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+    body{
+        scroll-behavior: unset;
+    }
+    /*header*/
+    header{
+        background-position:bottom;
+        background-size:100%;
+    }
+    header article {
+        width:100%;
+        text-align:center;
+        padding:15% 0 0 0;
+    }
+    /*nav*/
+    nav{
+        z-index:4;
+        width:100vw;
+        height:12vh;
+        
+    }
+    nav ul{
+        font-size:1.5vh;
+    }
+    #logo{
+        padding:0;
+    }
+    /*story*/
+    #OurStory{
+        display:block;
+        height:120vh;
+    }
+    #OurStory img{
+        display:block;
+        width:100%;
+    }
+    #OurStory article{
+        width:80%;
+        margin:0 auto;
+    }
+    #OurStory article p{
+        font-size:3vh;
+    }
+    /*Designs*/
+    #DESIGNS article{
+        padding:10% 5%;
+        text-align: center;
+    }
+    #pictures{
+        display:block;
+        padding:0;
+    }
+    #pictures img {
+        margin:5% auto;
+        width:100%;
+    }
+    #pictures figcaption{
+        text-align:center;
+    }
+    #video{
+        text-align: center;
+        margin: 10% 0;
+        height:40vh;
+    }
+    #video iframe{
+        width:100%;
+        height:100%;
+    }
+    /*contact*/
+    #contact{
+        display:block;
+    }
+    #contact h2{
+        padding-left:5%;
+    }
+    #contact p{
+    font-size:3vh;
+    padding-left:5%;
+    }
+    form{
+    width:100%;
+    font-size:3vh;  
+    }
+    
+    input{
+        
+        padding:5% 0;
+        margin-bottom:5%;
+        border-radius:0.3vh;
+        border:none;
+    }
+    #Message{
+        padding:7% 0;
+    }
+    input[type="submit"]{
+        width:20%;
+        font-weight: bold;
+        margin-top:5%;
+        cursor:pointer;
+        padding:3%;
+    }
+    input:focus{
+        outline:none; /*um die outline border beim focus zu entfernen */
+    }
+    form input::placeholder{
+        font-family:Work Sans;
+        text-align: center;
+        font-size:3vh;
+        
+    }
+    /*footer*/
+    footer{
+        height:18vh;
+        font-size:2.5vh;
+    }
+    #over{
+        display:block;
+        text-align:center;
+        font-size:2vh;
+    }
+    #over li{
+        padding:1% 0;
+    }
+    #intern{
+        display:flex;
+        justify-content: space-around;
+        font-family: Lora;
+        font-size:4vh;
+    }
+    
 }
